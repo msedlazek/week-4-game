@@ -1,37 +1,82 @@
+body {
+	margin: 20px;
+	background-color: black;
+}
+
+div {
+	margin: 10px;
+}
+
+#header {
+	height: 60px;
+	width: 434px;
+	color: #f2f2f2;
+	font-size: 60px;
+	text-align: center;
+	padding: 20px;
+	background-color: #e68a00;
+}
+
 .instructions {
 	width: 800px;
-	background-color: orange;
+	background-color: #ffe6cc;
 	font-size: 40px;
-	padding-bottom: 20px;
+	color: #40bf40;
+	padding: 10px;
+}
+
+.totalScore {
+	height: 40px;
+	width: 280px;
+	font-size: 34px;
+	padding: 10px;
+	color: white;
+	background-color: #009999;
 }
 
 .counterDisplay {
-	height: 200px;
-	width: 300px;
-	background-color: gray;
+	height: 180px;
+	width: 280px;
+	color: white;
+	padding: 10px;
+	background-color: #009999;
 	font-size: 100px;
 }
 
 .targetBox {
 	float: left;
-	height: 200px;
-	width: 300px;
-	background-color: blue;
+	height: 180px;
+	width: 280px;
+	padding: 10px;
+	background-color: #00cc66;
 	font-size: 100px;
 }
 
 .winsLosses {
 	float: left;
-	height: 200px;
+	height: 178px;
 	width: 300px;
-	background-color: green;
-	font-size: 50px;
+	background-color: #99ffff;
+	font-size: 65px;
 	text-align: center;
+	padding-top: 22px;
 }
 
 .crystals {
 	clear: both;
 	width: 100%;
+}
+
+#crystalImageOne {
+	padding-bottom: 40px;
+}
+
+#crystalImageTwo {
+	padding-bottom: 45px;
+}
+
+#crystalImageThree {
+	padding-bottom: 40px;
 }
 
 img {
