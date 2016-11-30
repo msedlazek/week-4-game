@@ -1,9 +1,25 @@
 $(document).ready(function(){
 
-alert("working");
+var counter = 0
 
-$("#crystalImage").on("click", function() {
-	alert("Crystal Clicked!");
+$("#crystalImageOne").on("click", function() {
+	counter += 1; 
+	$(".counterDisplay").text(counter);
+});
+
+$("#crystalImageTwo").on("click", function() {
+	counter += 2;
+	$(".counterDisplay").text(counter);
+});
+
+$("#crystalImageThree").on("click", function() {
+	counter += 3; 
+	$(".counterDisplay").text(counter);
+});
+
+$("#crystalImageFour").on("click", function() {
+	counter += 4;
+	$(".counterDisplay").text(counter);
 });
 
 });
