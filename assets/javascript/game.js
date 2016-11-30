@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 alert("working");
 
-$("button").on("click", function() {
+$("#crystalImage").on("click", function() {
 	alert("Crystal Clicked!");
 });
 
