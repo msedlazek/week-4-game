@@ -2,6 +2,12 @@ $(document).ready(function(){
 
 var counter = 0;
 var targetNumber = Math.floor(Math.random()*100+20);
+var wins = 0;
+var losses = 0; 
+
+// function newTargetNumber() {
+// 	Math.floor(Math.random()*100+20);
+// }
 
 $(".targetBox").text(targetNumber);
 
@@ -10,26 +16,52 @@ $(".targetBox").text(targetNumber);
 // 	var crystalValue = Math.floor(Math.random()*12+1);
 // }
 
+// function gameReset() {
+// 	counter = 0;
+// 	newTargetNumber();
+// 	// var crystalValue = Math.floor(Math.random()*12+1);
+// }
+
 
 // Lines 16 and 17 won't work as intended as it always changes.
 $("#crystalImageOne").on("click", function() {
-	var crystalValue = Math.floor(Math.random()*12+1);
-	counter += crystalValue; 
+	counter += 1; 
 	$(".counterDisplay").text(counter);
 	if (counter === targetNumber) {
-		alert("You Win!");
+		wins++;
+		$("#wins").html("Wins: " + wins);
+		counter = 0;
+		$(".counterDisplay").text(counter);
+		targetNumber = 50;
+		$(".targetBox").text(targetNumber);
 	}else if (counter >= targetNumber) {
-		alert("You Lose!");	
+		losses++;
+		$("#losses").html("Losses: " + losses);
+		counter = 0;
+		$(".counterDisplay").text(counter);
+		targetNumber = 50;
+		$(".targetBox").text(targetNumber);
 	};
+	
 });
 
 $("#crystalImageTwo").on("click", function() {
 	counter += 2;
 	$(".counterDisplay").text(counter);
 	if (counter === targetNumber) {
-		alert("You Win!");
+		wins++;
+		$("#wins").html("Wins: " + wins);
+		counter = 0;
+		$(".counterDisplay").text(counter);
+		targetNumber = 50;
+		$(".targetBox").text(targetNumber);
 	}else if (counter >= targetNumber) {
-		alert("You Lose!");	
+		losses++;
+		$("#losses").html("Losses: " + losses);
+		counter = 0;
+		$(".counterDisplay").text(counter);
+		targetNumber = 50;
+		$(".targetBox").text(targetNumber);
 	};
 });
 
@@ -37,9 +69,19 @@ $("#crystalImageThree").on("click", function() {
 	counter += 3; 
 	$(".counterDisplay").text(counter);
 	if (counter === targetNumber) {
-		alert("You Win!");
+		wins++;
+		$("#wins").html("Wins: " + wins);
+		counter = 0;
+		$(".counterDisplay").text(counter);
+		targetNumber = 50;
+		$(".targetBox").text(targetNumber);
 	}else if (counter >= targetNumber) {
-		alert("You Lose!");	
+		losses++;
+		$("#losses").html("Losses: " + losses);
+		counter = 0;
+		$(".counterDisplay").text(counter);
+		targetNumber = 50;
+		$(".targetBox").text(targetNumber);
 	};
 });
 
@@ -47,9 +89,19 @@ $("#crystalImageFour").on("click", function() {
 	counter += 4;
 	$(".counterDisplay").text(counter);
 	if (counter === targetNumber) {
-		alert("You Win!");
+		wins++;
+		$("#wins").html("Wins: " + wins);
+		counter = 0;
+		$(".counterDisplay").text(counter);
+		targetNumber = 50;
+		$(".targetBox").text(targetNumber);
 	}else if (counter >= targetNumber) {
-		alert("You Lose!");	
+		losses++;
+		$("#losses").html("Losses: " + losses);
+		counter = 0;
+		$(".counterDisplay").text(counter);
+		targetNumber = 50;
+		$(".targetBox").text(targetNumber);
 	};
 });
 // Note to self: create function to condense the anon function 
