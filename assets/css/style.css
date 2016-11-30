@@ -1,9 +1,17 @@
 .counterDisplay {
-	height: 300px;
+	height: 200px;
 	width: 300px;
 	background-color: gray;
+	font-size: 100px;
+}
+
+.targetBox {
+	height: 200px;
+	width: 300px;
+	background-color: blue;
+	font-size: 100px;
 }
 
 img {
-	width: 300px;
+	width: 200px;
 }
