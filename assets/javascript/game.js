@@ -5,6 +5,17 @@ var targetNumber = Math.floor(Math.random()*100+20);
 var wins = 0;
 var losses = 0; 
 
+var crystalValueOne = Math.floor(Math.random()*12+1);
+var crystalValueTwo = Math.floor(Math.random()*12+1);
+var crystalValueThree = Math.floor(Math.random()*12+1);
+var crystalValueFour = Math.floor(Math.random()*12+1);
+
+var newValue = function() {
+	crystalValueOne = Math.floor(Math.random()*12+1);
+	crystalValueTwo = Math.floor(Math.random()*12+1);
+	crystalValueThree = Math.floor(Math.random()*12+1);
+ 	crystalValueFour = Math.floor(Math.random()*12+1);
+}
 // function newTargetNumber() {
 // 	Math.floor(Math.random()*100+20);
 // }
@@ -23,85 +34,92 @@ $(".targetBox").text(targetNumber);
 // }
 
 
-// Lines 16 and 17 won't work as intended as it always changes.
 $("#crystalImageOne").on("click", function() {
-	counter += 1; 
+	counter += crystalValueOne; 
 	$(".counterDisplay").text(counter);
 	if (counter === targetNumber) {
 		wins++;
 		$("#wins").html("Wins: " + wins);
 		counter = 0;
 		$(".counterDisplay").text(counter);
-		targetNumber = 50;
+		targetNumber = Math.floor(Math.random()*100+20);
 		$(".targetBox").text(targetNumber);
+		newValue();
 	}else if (counter >= targetNumber) {
 		losses++;
 		$("#losses").html("Losses: " + losses);
 		counter = 0;
 		$(".counterDisplay").text(counter);
-		targetNumber = 50;
+		targetNumber = Math.floor(Math.random()*100+20);
 		$(".targetBox").text(targetNumber);
+		newValue();
 	};
 	
 });
 
 $("#crystalImageTwo").on("click", function() {
-	counter += 2;
+	counter += crystalValueTwo;
 	$(".counterDisplay").text(counter);
 	if (counter === targetNumber) {
 		wins++;
 		$("#wins").html("Wins: " + wins);
 		counter = 0;
 		$(".counterDisplay").text(counter);
-		targetNumber = 50;
+		targetNumber = Math.floor(Math.random()*100+20);
 		$(".targetBox").text(targetNumber);
+		newValue();
 	}else if (counter >= targetNumber) {
 		losses++;
 		$("#losses").html("Losses: " + losses);
 		counter = 0;
 		$(".counterDisplay").text(counter);
-		targetNumber = 50;
+		targetNumber = Math.floor(Math.random()*100+20);
 		$(".targetBox").text(targetNumber);
+		newValue();
 	};
 });
 
 $("#crystalImageThree").on("click", function() {
-	counter += 3; 
+	counter += crystalValueThree; 
 	$(".counterDisplay").text(counter);
 	if (counter === targetNumber) {
 		wins++;
 		$("#wins").html("Wins: " + wins);
 		counter = 0;
 		$(".counterDisplay").text(counter);
-		targetNumber = 50;
+		targetNumber = Math.floor(Math.random()*100+20);
 		$(".targetBox").text(targetNumber);
+		newValue();
 	}else if (counter >= targetNumber) {
 		losses++;
 		$("#losses").html("Losses: " + losses);
 		counter = 0;
 		$(".counterDisplay").text(counter);
-		targetNumber = 50;
+		targetNumber = Math.floor(Math.random()*100+20);
 		$(".targetBox").text(targetNumber);
+		newValue();
 	};
 });
 
 $("#crystalImageFour").on("click", function() {
-	counter += 4;
+	counter += crystalValueFour;
 	$(".counterDisplay").text(counter);
 	if (counter === targetNumber) {
 		wins++;
 		$("#wins").html("Wins: " + wins);
 		counter = 0;
 		$(".counterDisplay").text(counter);
-		targetNumber = 50;
+		targetNumber = Math.floor(Math.random()*100+20);
 		$(".targetBox").text(targetNumber);
+		newValue();
 	}else if (counter >= targetNumber) {
 		losses++;
 		$("#losses").html("Losses: " + losses);
 		counter = 0;
 		$(".counterDisplay").text(counter);
-		targetNumber = 50;
+		targetNumber = Math.floor(Math.random()*100+20);
 		$(".targetBox").text(targetNumber);
+		newValue();
 	};
 });
 // Note to self: create function to condense the anon function 

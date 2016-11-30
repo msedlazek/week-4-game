@@ -1,3 +1,10 @@
+.instructions {
+	width: 800px;
+	background-color: orange;
+	font-size: 40px;
+	padding-bottom: 20px;
+}
+
 .counterDisplay {
 	height: 200px;
 	width: 300px;
@@ -6,6 +13,7 @@
 }
 
 .targetBox {
+	float: left;
 	height: 200px;
 	width: 300px;
 	background-color: blue;
@@ -13,6 +21,7 @@
 }
 
 .winsLosses {
+	float: left;
 	height: 200px;
 	width: 300px;
 	background-color: green;
@@ -20,6 +29,12 @@
 	text-align: center;
 }
 
+.crystals {
+	clear: both;
+	width: 100%;
+}
+
 img {
 	width: 200px;
 }
+
